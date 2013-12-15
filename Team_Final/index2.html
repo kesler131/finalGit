@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <!--===== Meta =====-->
+		<meta charset="UTF-8">
+		<title>SUNY Search</title>
+
+    <!--===== jQuery =====-->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+
+    <!--===== Bootstrap =====-->
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="bootstrap-responsive.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+
+    <!--===== Less =====-->
+		<link rel="stylesheet/less" href="less/bootstrap.less">
+    <script src="less-1.5.0.min.js"></script>
+		<script type="text/javascript">var switchTo5x=true;</script>
+
+		<!--===== Font Awesome =====-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+    <!--===== General CSS =====-->
+    <link href="final_stylesheet.css" rel="stylesheet" media="screen">
+
+    <!--===== MySQL Table Inputs =====-->
+      <!--... 
+
+      Table Input code could go here?
+
+      ...-->
+
+    <!--===== Random Background =====-->
+    <script language="JavaScript">
+      <!-- Activate cloaking device
+        var randnum = Math.random();
+        var inum = 9;
+        // Change this number to the number of images you are using.
+        var rand1 = Math.round(randnum * (inum-1));
+        images = new Array
+        images[0] = "images/body/UAlbany1.jpg"
+        images[1] = "images/body/StonyBrook2.jpg"
+        images[2] = "images/body/Binghamton2.jpg"
+        images[3] = "images/body/UBuffalo2.jpg"
+        images[4] = "images/body/Cortland3.jpg"
+        images[5] = "images/body/Brockport2.jpg"
+        images[6] = "images/body/Farmingdale2.jpg"
+        images[7] = "images/body/Fredonia1.jpg"
+        images[8] = "images/body/Geneseo1.jpg"
+        images[9] = "images/body/Newpaltz2.jpg"
+        // Ensure you have an array item for every image you are using.
+        var image = images[rand1]
+      // Deactivate cloaking device -->
+    </script>
+
+	</head>
+<!--===== === =====-->
+	<body>
+    <script language="JavaScript">
+      <!-- Activate cloaking device
+        document.write('<body background="' + image + '" text="white">')
+      // Deactivate cloaking device -->
+    </script>
+
+
+    <div id="body1" class="container">
+      <div id="heroU1" class="well">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a href="#" id="button4" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+      </div>
+    </div> 
+
+		   
+    <div class="container-fluid">
+    <div class="row-fluid">  
+    <div id="sidebar" class="span3"> 
+    <div class="well sidebar-nav">
+    <ul id="ulMin" class="nav nav-list">  
+        <li class="nav-header">SUNY Search</li>  
+        <li class="active"><a href="#"><i class="icon-white icon-home"></i> Home</a></li>
+        <li id="liMin" class="accordion-group">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseTwo">
+                <i class="icon-search"></i> Search
+            </a>
+            <div id="collapseTwo" class="accordion-body collapse" style="height: 0px; ">
+                <div class="accordion-inner">
+                    <ul>
+                        <li>
+                            <input type="text" class="input-block-level" placeholder="Enter a SUNY...">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="liMin" class="accordion-group">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseThree">
+                <i class="icon-th-list"></i> Browse
+            </a>
+            <div id="collapseThree" class="accordion-body collapse" style="height: 0px; ">
+                <div class="accordion-inner">
+                    <ul>
+                        <li>
+                            <select id="sel" data-native-menu="false" multiple="false" name="schools">
+                                <option id="alb" value="0">University at Albany</option>
+                                <option id="bing" value="1">Binghamton University</option>
+                                <option id="brock" value="2">The College at Brockport</option>
+                                <option id="buff" value="3">University at Buffalo</option>
+                                <option id="cort" value="4">SUNY Cortland</option>
+                                <option id="farm" value="5">Farmingdale State College</option>
+                                <option id="fred" value="6">SUNY Fredonia</option>
+                                <option id="gene" value="7">SUNY Geneseo</option>
+                                <option id="newpal" value="8">SUNY New Paltz</option>
+                                <option id="west" value="9">College at Old Westbury</option>
+                                <option id="oneon" value="10">SUNY Oneonta</option>
+                                <option id="osweg" value="11">Oswego State College</option>
+                                <option id="platt" value="12">SUNY Plattsburgh</option>
+                                <option id="pots" value="13">SUNY Potsdam</option>
+                                <option id="pur" value="14">Purchase College</option>
+                                <option id="stony" value="15">Stony Brook University</option>
+                            </select>
+                        </li>
+                    </ul>                 
+                </div>
+            </div>
+        </li>
+        <li id="heading1" class="nav-header">College Information</li>
+        <li><a href="#" id="button8"><i class="icon-book"></i> Academics</a></li>  
+        <li><a href="#" id="button9"><i class="icon-group"></i> Campus</a></li>  
+        <li><a href="#" id="button1"><i class="icon-trophy"></i> Athletics</a></li> 
+        <li><a href="#" id="button10"><i class="icon-money"></i> Tuition and Fees</a></li>             
+        <li class="divider"></li>    
+        <li><a href="#" id="button7"><i class="icon-flag"></i> Help</a></li>            
+    </ul>  
+    </div>  
+    </div>
+    </div>
+    </div> 
+             
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+      <!-- Athletics -->
+        <div id="divA" class="well" style="width:800px;position:absolute;">
+          <h2>Athletics</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <!--... 
+              
+              'Athletic' Data from Table goes here
+                This might include data from sections like:
+                  Athletic Conference 
+
+            ...-->
+            <p><a class="btn" href="#" id="button2">View details &raquo;</a></p>
+        </div>
+
+        <div id="divB" class="well" style="width:800px;position:absolute;">
+          <h2>Football</h2>
+          <img src="romain.jpg">  
+          <p>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn" href="#" id="button3">Close</a></p>
+        </div>
+
+
+      <!-- Academics -->  
+        <div id="divC" class="well" style="width:800px;position:absolute;">
+          <h2>Academics</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <!--... 
+              
+              'Academics' Data from Table goes here
+                This might include data from sections like:
+                  Overall Admission Rate
+                  SAT Average
+                  SAT Math Average
+                  SAT Reading Average
+                  Highschool GPA
+                  Transfer GPA
+              
+            ...-->
+            <p><a class="btn" href="#" id="button11">Close</a></p>
+        </div>
+
+
+      <!-- Campus -->  
+        <div id="divD" class="well" style="width:800px;position:absolute;">
+          <h2>Campus</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <!--... 
+              
+              'Campus' Data from Table goes here
+                This might include data from sections like:
+                  % Population on Campus
+                  $ of Population Female
+                  % of Population Male
+                  Male Percent in Frat
+                  Female Percent in Sor
+                  Undergrad Population  
+                  Location
+                  Setting
+                  Cars for freshman
+                  (optional) A pie chart illustrating the diversity of students on campus
+              
+            ...-->
+            <p><a class="btn" href="#" id="button12">Close</a></p>
+        </div>
+
+
+      <!-- Tuition and Fees -->  
+        <div id="divE" class="well" style="width:800px;position:absolute;">
+          <h2>Tuition and Fees</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <!--... 
+              
+              'Tuition and Fees' Data from Table goes here
+                This might include data from sections like:
+                  In-State Tuition
+                  Out-State Tuition
+                  Cost Of Room and Board
+                  Average Financial Aid
+                  Average Post-Grad Debt
+              
+            ...-->
+            <p><a class="btn" href="#" id="button13">Close</a></p>
+        </div>
+
+ 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+	<!--===== Javascript =====-->
+  <!--(placed at the end of the document so the pages load faster)-->
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/jquery.carousel.fullscreen.js"></script>
+    <script src="holder/holder.js"></script>
+
+  <!--===== jQuery Animated DIVs =====-->
+    <script> 
+
+      $(function(){
+        $('#body1').animate({bottom:'15%'}, 800);
+      }); 
+
+      $(document).ready(function(){
+        $("#button4").click(function(){
+          $("#body1").animate({bottom:'100%'}, 600, function(){$('#sidebar').animate({'margin-left': '29.6%'}, 350)} );
+        });
+      });
+
+    // Athletics
+      $(document).ready(function(){
+        $("#button1").click(function(){
+          $("#divA").animate({bottom:'50%'}, 600);
+        });
+      });
+
+      $(document).ready(function(){
+        $("#button2").click(function(){
+          $("#divA").animate({bottom:'100%'}, 350, function(){$("#divB").animate({bottom:'5%'}, 800)});
+        });
+      });
+
+      $(document).ready(function(){
+        $("#button3").click(function(){
+          $("#divB").animate({bottom:'100%'}, 400);
+        });
+      });  
+
+    // Academics
+      $(document).ready(function(){
+        $("#button8").click(function(){
+          $("#divC").animate({bottom:'50%'}, 600);
+        });
+      });
+
+      $(document).ready(function(){
+        $("#button11").click(function(){
+          $("#divC").animate({bottom:'100%'}, 400);
+        });
+      });
+
+    // Campus
+      $(document).ready(function(){
+        $("#button9").click(function(){
+          $("#divD").animate({bottom:'50%'}, 600);
+        });
+      });
+
+      $(document).ready(function(){
+        $("#button12").click(function(){
+          $("#divD").animate({bottom:'100%'}, 400);
+        });
+      });  
+
+      // Tuition and Fees
+      $(document).ready(function(){
+        $("#button10").click(function(){
+          $("#divE").animate({bottom:'50%'}, 600);
+        });
+      });
+
+      $(document).ready(function(){
+        $("#button13").click(function(){
+          $("#divE").animate({bottom:'100%'}, 400);
+        });
+      });  
+
+
+    </script>
+
+  <!--===== jQuery Changing Background =====-->
+    <script>
+
+      $(document).ready(function () {
+        $("#button6").click(function(){
+          $("body").css("background-image", "url(images/body/Binghamton2.jpg)");
+        });
+      });
+
+      var images = [
+        'images/body/UAlbany1.jpg',
+        'images/body/Binghamton2.jpg',
+        'images/body/Brockport2.jpg',
+        'images/body/Cortland3.jpg',
+        'images/body/Farmingdale2.jpg',
+        'images/body/Fredonia1.jpg',
+        'images/body/Geneseo1.jpg',
+        'images/body/Newpaltz2.jpg',
+        'images/body/StonyBrook2.jpg'
+      ];
+
+      $(function() {
+        $("#sel #alb").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/UAlbany1.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("University at Albany");
+        });
+      });
+
+      $(function() {
+        $("#sel #bing").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/Binghamton2.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("Binghamton University");
+        });
+      });
+
+      $(function() {
+        $("#sel #brock").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/Brockport2.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("The College at Brockport");
+        });
+      });
+
+      $(function() {
+        $("#sel #buff").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/UBuffalo2.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("University at Buffalo");
+        });
+      });
+
+      $(function() {
+        $("#sel #cort").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/Cortland3.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("SUNY Cortland");
+        });
+      });
+
+      $(function() {
+        $("#sel #farm").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/Farmingdale2.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("Farmingdale State College");
+        });
+      });
+
+      $(function() {
+        $("#sel #fred").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/Fredonia1.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("SUNY Fredonia");
+        });
+      });
+
+      $(function() {
+        $("#sel #gene").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/Geneseo1.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("SUNY Geneseo");
+        });
+      });
+
+      $(function() {
+        $("#sel #newpal").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/Newpaltz2.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("SUNY New Paltz");
+        });
+      });
+
+      $(function() {
+        $("#sel #stony").click(function(){
+          $("body").parent().fadeOut(100, function() {
+                  $("body").css('background-image', 'url(images/body/StonyBrook2.jpg)'); 
+                    $(this).fadeIn(100);
+          });
+          $("#heading1").text("Stony Brook University");
+        });
+      });
+
+      </script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
